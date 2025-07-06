@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Monitoring Dashboard</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Top Left Stats -->
+        <div class="stats-card">
+            <div class="stats-number">400</div>
+            <div class="stats-label">Total Visitors Analyzed</div>
+            <div class="stats-sublabel">↑ 11.1% from yesterday</div>
+        </div>
+
+        <!-- Top Right Stats -->
+        <div class="stats-card">
+            <div class="stats-number">400</div>
+            <div class="stats-label">Total People Inside</div>
+            <div class="stats-sublabel">Current occupancy</div>
+        </div>
+
+        <!-- Main Video (Right Side) -->
+        <div class="main-video">
+            <div class="video-header">
+                <div class="video-title">
+                    <span class="live-indicator"></span>
+                    Live Video
+                </div>
+                <div class="video-controls">
+                    <select class="dropdown">
+                        <option>Camera 1</option>
+                        <option>Camera 2</option>
+                        <option>Camera 3</option>
+                    </select>
+                    <div class="datetime">10/04/2024 01:00 PM</div>
+                </div>
+            </div>
+            <div class="video-display">
+                <div class="office-scene">
+                    <div class="office-elements">
+                        <div class="ceiling">
+                            <div class="ceiling-lights"></div>
+                        </div>
+                        <div class="workstations">
+                            <div class="workstation">
+                                <div class="monitor">
+                                    <div class="monitor-screen"></div>
+                                </div>
+                            </div>
+                            <div class="workstation">
+                                <div class="monitor">
+                                    <div class="monitor-screen"></div>
+                                </div>
+                            </div>
+                            <div class="workstation">
+                                <div class="monitor">
+                                    <div class="monitor-screen"></div>
+                                </div>
+                            </div>
+                            <div class="workstation">
+                                <div class="monitor">
+                                    <div class="monitor-screen"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <div>Visitors: 24</div>
+                    <div class="weapon-status">Weapons: Check +8</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Section - Alerts Statistics -->
+        <div class="alerts-section">
+            <div class="alerts-header">
+                <div class="alerts-title">Alerts Statistics</div>
+                <div class="menu-dots">⋮</div>
+            </div>
+            <div class="alerts-main-number">6,875 <span class="percentage-change">↑ 11%</span></div>
+            
+            <div class="chart-container">
+                <svg class="chart-svg" viewBox="0 0 300 40">
+                    <polyline points="10,30 25,25 40,20 55,18 70,22 85,15 100,18 115,12 130,15 145,10 160,12 175,8 190,10 205,6 220,8 235,4 250,6 265,3 280,5 295,2" 
+                              fill="none" stroke="#60a5fa" stroke-width="2"/>
+                    <circle cx="295" cy="2" r="2" fill="#60a5fa"/>
+                </svg>
+            </div>
+
+            <div class="alert-stats">
+                <div class="alert-stat">
+                    <div class="alert-number">24</div>
+                    <div class="alert-type">Total Confirmed Alarms</div>
+                    <div class="stats-sublabel">↑ 6.6% from yesterday</div>
+                </div>
+                <div class="alert-stat">
+                    <div class="alert-number">16</div>
+                    <div class="alert-type">Total Rejected Alarms</div>
+                    <div class="stats-sublabel">↓ 2.1% from yesterday</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Section 1 -->
+        <div class="new-section new-section-1">
+            <div class="new-section-number">142</div>
+            <div class="new-section-label">Threat Level</div>
+            <div class="new-section-sublabel">Medium Risk</div>
+        </div>
+
+        <!-- New Section 2 -->
+        <div class="new-section new-section-2">
+            <div class="new-section-number">98%</div>
+            <div class="new-section-label">System Health</div>
+            <div class="new-section-sublabel">All systems operational</div>
+        </div>
+
+        <!-- Camera Info Section -->
+        <div class="camera-info-section">
+            <div class="section-title">
+                Camera Info
+                <div class="menu-dots">⋮</div>
+            </div>
+            <table class="camera-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camera 1</td>
+                        <td>Location 1</td>
+                        <td class="status-active">Active</td>
+                    </tr>
+                    <tr>
+                        <td>Camera 2</td>
+                        <td>Location 1</td>
+                        <td class="status-weapon">Alert</td>
+                    </tr>
+                    <tr>
+                        <td>Camera 3</td>
+                        <td>Location 1</td>
+                        <td class="status-weapon">Alert</td>
+                    </tr>
+                    <tr>
+                        <td>Camera 4</td>
+                        <td>Location 1</td>
+                        <td class="status-active">Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Event Log Section -->
+        <div class="event-log-section">
+            <div class="section-title">
+                30-Day Event Log Preview
+                <div class="menu-dots">⋮</div>
+            </div>
+            <div class="log-content">
+                <div class="log-entry">
+                    <span class="log-timestamp">10:00:15</span> - <span class="log-alert">ALERT:</span> Weapon detected in Camera 2
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">10:00:12</span> - <span class="log-info">INFO:</span> Motion detected in Camera 1
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">10:00:08</span> - <span class="log-alert">ALERT:</span> Weapon detected in Camera 3
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">10:00:05</span> - <span class="log-info">INFO:</span> Person entered area
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">10:00:02</span> - <span class="log-alert">ALERT:</span> Weapon detected in Camera 4
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">09:59:58</span> - <span class="log-info">INFO:</span> System check completed
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">09:59:55</span> - <span class="log-alert">ALERT:</span> Weapon detected in Camera 5
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">09:59:52</span> - <span class="log-info">INFO:</span> Camera 6 status normal
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">09:59:48</span> - <span class="log-alert">ALERT:</span> Weapon detected in Camera 1
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">09:59:45</span> - <span class="log-info">INFO:</span> System status normal
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
